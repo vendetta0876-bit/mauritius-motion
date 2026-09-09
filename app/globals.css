@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-base text-ink-50 font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.lagoon.DEFAULT");
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .glass-card-highlight {
+    background: rgba(0, 194, 178, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(0, 194, 178, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 194, 178, 0.12);
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs font-semibold tracking-wide;
+  }
+
+  .section-shell {
+    @apply px-6 py-20 sm:px-10 lg:px-16;
+  }
+}
+
+@layer utilities {
+  @keyframes step-cycle {
+    0% {
+      opacity: 0.22;
+      transform: translateY(3px);
+    }
+    16% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    49% {
+      opacity: 0.22;
+      transform: translateY(3px);
+    }
+    100% {
+      opacity: 0.22;
+      transform: translateY(3px);
+    }
+  }
+
+  .animate-step {
+    animation: step-cycle 6s ease-in-out infinite;
+  }
+
+  .animate-step-delay-1 {
+    animation-delay: 2s;
+  }
+
+  .animate-step-delay-2 {
+    animation-delay: 4s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
