@@ -41,24 +41,29 @@ export function Hero() {
         </div>
 
         <div>
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card border border-white/10 bg-gradient-to-br from-base-alt to-base">
-            <Image
-              src="/images/apex-hero.png"
-              alt="Coach sportif à l'île Maurice"
-              fill
-              priority
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover"
-            />
+          <div className="mx-auto max-w-[380px] lg:max-w-[420px]">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card border border-white/10 bg-gradient-to-br from-base-alt to-base">
+              <Image
+                src="/images/apex-hero.png"
+                alt="Coach sportif à l'île Maurice"
+                fill
+                priority
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
 
-          <div className="mt-6 grid grid-cols-3 gap-4">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center sm:text-left">
-                <div className="text-2xl font-display text-lagoon">
+          <div className="mt-8 grid grid-cols-3 gap-3">
+            {stats.map((stat, i) => (
+              <div
+                key={stat.label}
+                className={`animate-fade-up ${i === 1 ? "fade-up-delay-1" : i === 2 ? "fade-up-delay-2" : ""} rounded-card border border-white/10 bg-white/5 px-3 py-4 text-center backdrop-blur-sm`}
+              >
+                <div className="text-xl font-display text-lagoon sm:text-2xl">
                   {stat.value}
                 </div>
-                <div className="mt-1 text-xs leading-snug text-ink-400">
+                <div className="mt-1.5 text-[11px] leading-snug text-ink-400">
                   {stat.label}
                 </div>
               </div>

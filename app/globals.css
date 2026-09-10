@@ -82,6 +82,17 @@
   .animate-step-delay-2 {
     animation-delay: 4s;
   }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up {
+    opacity: 0;
+    animation: fade-up 0.7s ease-out forwards;
+  }
+  .fade-up-delay-1 { animation-delay: 0.15s; }
+  .fade-up-delay-2 { animation-delay: 0.3s; }
 }
 
 @media (prefers-reduced-motion: reduce) {
