@@ -24,7 +24,7 @@ const icons: Record<string, JSX.Element> = {
 function KettlebellOutline({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 100 130" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
-      <path d="M30 58V38C30 14 45 6 50 6C55 6 70 14 70 38V58" />
+      <path d="M32 60V40A18 18 0 0 1 68 40V60" />
       <circle cx="50" cy="92" r="37" />
     </svg>
   );
@@ -39,12 +39,16 @@ const steps = [
 export function Method() {
   return (
     <section className="section-shell relative overflow-hidden bg-base">
-      <KettlebellOutline className="animate-ghost pointer-events-none absolute left-6 top-4 h-16 w-16 rotate-[-8deg] text-coral/25 sm:left-10" />
-      <KettlebellOutline className="animate-ghost ghost-delay-2 pointer-events-none absolute right-8 top-6 h-12 w-12 rotate-[10deg] text-lagoon/25" />
+      <KettlebellOutline className="animate-ghost pointer-events-none absolute left-[6%] top-4 h-16 w-16 rotate-[-8deg] text-coral/25" />
+      <KettlebellOutline className="animate-ghost ghost-delay-2 pointer-events-none absolute left-[32%] top-8 h-10 w-10 rotate-[4deg] text-lagoon/20" />
+      <KettlebellOutline className="animate-ghost ghost-delay-1 pointer-events-none absolute left-[58%] top-2 h-12 w-12 rotate-[-6deg] text-coral/20" />
+      <KettlebellOutline className="animate-ghost ghost-delay-3 pointer-events-none absolute right-[6%] top-6 h-14 w-14 rotate-[10deg] text-lagoon/25" />
       <KettlebellOutline className="animate-ghost ghost-delay-3 pointer-events-none absolute left-1 top-1/2 hidden h-11 w-11 -translate-y-1/2 rotate-[-4deg] text-lagoon/15 lg:block" />
       <KettlebellOutline className="animate-ghost ghost-delay-1 pointer-events-none absolute right-1 top-[42%] hidden h-11 w-11 -translate-y-1/2 rotate-[7deg] text-coral/15 lg:block" />
-      <KettlebellOutline className="animate-ghost ghost-delay-1 pointer-events-none absolute left-1/4 bottom-4 h-14 w-14 rotate-[6deg] text-lagoon/20" />
-      <KettlebellOutline className="animate-ghost ghost-delay-3 pointer-events-none absolute right-1/4 bottom-6 h-10 w-10 rotate-[-6deg] text-coral/20" />
+      <KettlebellOutline className="animate-ghost ghost-delay-1 pointer-events-none absolute left-[8%] bottom-4 h-14 w-14 rotate-[6deg] text-lagoon/20" />
+      <KettlebellOutline className="animate-ghost ghost-delay-2 pointer-events-none absolute left-[38%] bottom-8 h-10 w-10 rotate-[-5deg] text-coral/15" />
+      <KettlebellOutline className="animate-ghost ghost-delay-3 pointer-events-none absolute right-[35%] bottom-2 h-11 w-11 rotate-[8deg] text-lagoon/15" />
+      <KettlebellOutline className="animate-ghost ghost-delay-2 pointer-events-none absolute right-[7%] bottom-6 h-10 w-10 rotate-[-6deg] text-coral/20" />
 
       <div className="relative mx-auto max-w-6xl">
         <h2 className="text-sm font-semibold tracking-wide text-lagoon">Ma méthode</h2>
