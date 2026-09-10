@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AnimatedStat } from "./AnimatedStat";
 
 const stats = [
   { value: "15+", label: "années d'expérience" },
@@ -9,7 +10,7 @@ const stats = [
 export function Hero() {
   return (
     <section className="section-shell bg-base pt-28 lg:pt-32">
-      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
         <div>
           <span className="eyebrow text-coral">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" />
@@ -41,7 +42,7 @@ export function Hero() {
         </div>
 
         <div>
-          <div className="mx-auto max-w-[380px] lg:max-w-[420px]">
+          <div className="mx-auto max-w-[380px] lg:mt-10 lg:max-w-[420px]">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-card border border-white/10 bg-gradient-to-br from-base-alt to-base">
               <Image
                 src="/images/apex-hero.png"
@@ -56,17 +57,7 @@ export function Hero() {
 
           <div className="mt-8 grid grid-cols-3 gap-3">
             {stats.map((stat, i) => (
-              <div
-                key={stat.label}
-                className={`animate-fade-up ${i === 1 ? "fade-up-delay-1" : i === 2 ? "fade-up-delay-2" : ""} rounded-card border border-white/10 bg-white/5 px-3 py-4 text-center backdrop-blur-sm`}
-              >
-                <div className="text-xl font-display text-lagoon sm:text-2xl">
-                  {stat.value}
-                </div>
-                <div className="mt-1.5 text-[11px] leading-snug text-ink-400">
-                  {stat.label}
-                </div>
-              </div>
+              <AnimatedStat key={stat.label} value={stat.value} label={stat.label} delayMs={i * 150} />
             ))}
           </div>
         </div>
