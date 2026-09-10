@@ -21,7 +21,9 @@ export default function Icon() {
           letterSpacing: "-3px",
         }}
       >
-        M<span style={{ color: "#00C2B2" }}>M</span>
+        <span style={{ marginRight: "-3px" }}>
+          M<span style={{ color: "#00C2B2" }}>M</span>
+        </span>
       </div>
     ),
     { ...size }
