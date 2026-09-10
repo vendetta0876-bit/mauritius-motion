@@ -27,7 +27,7 @@ export function Footer() {
 
           <nav className="flex flex-col gap-2 text-sm text-ink-200">
             <a href="#formules" className="hover:text-ink-50">Formules</a>
-            <a href="#" className="hover:text-ink-50">Qui je suis</a>
+            <a href="#coach" className="hover:text-ink-50">Qui je suis</a>
           </nav>
 
           <div>

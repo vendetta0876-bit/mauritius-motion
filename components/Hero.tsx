@@ -1,11 +1,4 @@
 import Image from "next/image";
-import { AnimatedStat } from "./AnimatedStat";
-
-const stats = [
-  { value: "15+", label: "années d'expérience" },
-  { value: "500+", label: "athlètes accompagnés" },
-  { value: "100%", label: "dédié à votre progression" },
-];
 
 export function Hero() {
   return (
@@ -18,7 +11,7 @@ export function Hero() {
           </span>
 
           <h1 className="mt-6 text-4xl leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Coaching sportif à l&rsquo;île Maurice
+            Coaching sportif à <span className="text-lagoon">l&rsquo;île Maurice</span>
           </h1>
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-ink-200">
@@ -53,12 +46,6 @@ export function Hero() {
                 className="object-cover"
               />
             </div>
-          </div>
-
-          <div className="mt-8 grid grid-cols-3 gap-3">
-            {stats.map((stat, i) => (
-              <AnimatedStat key={stat.label} value={stat.value} label={stat.label} delayMs={i * 150} />
-            ))}
           </div>
         </div>
       </div>

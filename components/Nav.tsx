@@ -12,7 +12,7 @@ export function Nav() {
           <a href="#formules" className="hover:text-ink-50">
             Formules
           </a>
-          <a href="#" className="hover:text-ink-50">
+          <a href="#coach" className="hover:text-ink-50">
             Qui je suis
           </a>
         </nav>

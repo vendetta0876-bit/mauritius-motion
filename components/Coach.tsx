@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Coach() {
   return (
-    <section className="section-shell relative overflow-hidden bg-base-alt">
+    <section id="coach" className="section-shell relative overflow-hidden bg-base-alt">
       <div
         aria-hidden
         className="pointer-events-none absolute -right-32 top-10 h-96 w-96 rounded-full bg-lagoon/20 blur-[110px]"
@@ -36,7 +36,7 @@ export function Coach() {
           <div className="lg:relative lg:pl-8">
             <div className="absolute -left-1 top-0 hidden h-full w-px bg-gradient-to-b from-transparent via-lagoon/60 to-transparent lg:block" />
             <p className="max-w-lg text-base leading-relaxed text-ink-200">
-              Coach sportif depuis plus de{" "}
+              Je m&rsquo;appelle Alain, coach sportif depuis plus de{" "}
               <span className="font-semibold text-ink-50">15 ans</span>, dont{" "}
               <span className="font-semibold text-ink-50">7 ans</span>{" "}
               co-owner d&rsquo;une box de CrossFit, et passionné de sport
