@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section className="section-shell bg-base pt-28 lg:pt-32">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
-        <div>
+        <div className="lg:mt-20">
           <span className="eyebrow text-coral">
             <span className="h-1.5 w-1.5 rounded-full bg-coral" />
             Pas de programme générique. Du sur-mesure.
