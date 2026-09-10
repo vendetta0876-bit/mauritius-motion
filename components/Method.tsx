@@ -1,3 +1,5 @@
+import { Reveal } from "./Reveal";
+
 const icons: Record<string, JSX.Element> = {
   observation: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
@@ -62,7 +64,11 @@ export function Method() {
 
           <div className="flex flex-col gap-4">
             {steps.map((step) => (
-              <div key={step.title} className={`animate-rise-up ${step.delay} glass-card ${step.border} flex gap-4 rounded-card p-5`}>
+              <Reveal
+                key={step.title}
+                delayMs={step.delay === "fade-up-delay-1" ? 150 : step.delay === "fade-up-delay-2" ? 300 : 0}
+                className={`glass-card ${step.border} flex gap-4 rounded-card p-5`}
+              >
                 <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${step.accent}`}>
                   {icons[step.icon]}
                 </span>
@@ -70,7 +76,7 @@ export function Method() {
                   <h3 className="text-sm font-semibold text-ink-50">{step.title}</h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink-400">{step.description}</p>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

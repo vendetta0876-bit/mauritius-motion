@@ -1,3 +1,4 @@
+import { Reveal } from "./Reveal";
 import { WhatsappCta } from "./WhatsappCta";
 
 function CheckIcon({ className }: { className?: string }) {
@@ -36,7 +37,7 @@ export function Pricing() {
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          <div className="animate-rise-up">
+          <Reveal delayMs={0}>
             <div className="glass-card flex h-full flex-col rounded-card border-t-2 border-coral/40 p-7 transition-transform duration-300 hover:-translate-y-1">
               <h3 className="text-base font-semibold text-ink-50">Pack 5 séances</h3>
               <p className="mt-1 text-sm text-ink-400">2 500 Rs / séance</p>
@@ -53,9 +54,9 @@ export function Pricing() {
               </ul>
               <WhatsappCta label="Réserver ce pack" message="Bonjour, je suis intéressé(e) par le pack de 5 séances." variant="outline" className="mt-7 w-full" />
             </div>
-          </div>
+          </Reveal>
 
-          <div className="animate-rise-up fade-up-delay-1">
+          <Reveal delayMs={150}>
             <div className="glass-card-highlight relative flex h-full scale-[1.02] flex-col rounded-card border-t-2 border-lagoon p-7 shadow-[0_20px_60px_-15px_rgba(0,194,178,0.35)] transition-transform duration-300 hover:-translate-y-1">
               <span className="absolute -top-3 left-7 rounded-full bg-lagoon px-3 py-1 text-[10px] font-bold tracking-wide text-[#00201d]">LE PLUS COMPLET</span>
               <h3 className="mt-2 text-base font-semibold text-ink-50">Pack 10 séances</h3>
@@ -79,7 +80,7 @@ export function Pricing() {
               </ul>
               <WhatsappCta label="Réserver ce pack" message="Bonjour, je suis intéressé(e) par le pack de 10 séances." variant="solid" className="mt-7 w-full" />
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
