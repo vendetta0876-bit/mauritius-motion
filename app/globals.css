@@ -119,6 +119,14 @@
   .ghost-delay-1 { animation-delay: 2.2s; }
   .ghost-delay-2 { animation-delay: 4.4s; }
   .ghost-delay-3 { animation-delay: 6.6s; }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 42s linear infinite;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
