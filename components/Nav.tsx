@@ -4,8 +4,8 @@ export function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-base/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">
-        <span className="text-sm font-semibold tracking-wide text-ink-50">
-          Mauritius Motion
+        <span className="text-base font-semibold tracking-wide text-ink-50">
+          Mauritius <span className="text-lagoon">Motion</span>
         </span>
 
         <nav className="hidden gap-8 text-sm text-ink-200 sm:flex">
@@ -20,7 +20,7 @@ export function Nav() {
         <WhatsappCta
           label="WhatsApp"
           message="Bonjour, j'ai une question sur le coaching sportif."
-          variant="outline"
+          variant="whatsapp"
         />
       </div>
     </header>

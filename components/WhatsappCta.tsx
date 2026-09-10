@@ -13,7 +13,7 @@ export function WhatsappCta({
 }: {
   label: string;
   message: string;
-  variant?: "solid" | "outline";
+  variant?: "solid" | "outline" | "whatsapp";
   className?: string;
 }) {
   const base =
@@ -21,7 +21,9 @@ export function WhatsappCta({
   const styles =
     variant === "solid"
       ? "bg-coral text-[#2a0e05] hover:bg-coral/90"
-      : "border border-white/20 text-ink-50 hover:border-white/40";
+      : variant === "whatsapp"
+        ? "bg-[#25D366] text-[#08380f] hover:bg-[#25D366]/90"
+        : "border border-white/20 text-ink-50 hover:border-white/40";
 
   return (
     <a
