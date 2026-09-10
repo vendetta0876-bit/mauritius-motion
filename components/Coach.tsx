@@ -5,7 +5,7 @@ export function Coach() {
     <section className="section-shell relative overflow-hidden bg-base-alt">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-20 top-1/3 h-72 w-72 rounded-full bg-lagoon/15 blur-[90px]"
+        className="pointer-events-none absolute -right-32 top-10 h-96 w-96 rounded-full bg-lagoon/20 blur-[110px]"
       />
       <div className="mx-auto max-w-6xl">
         <h2 className="text-sm font-semibold tracking-wide text-lagoon">
@@ -25,15 +25,16 @@ export function Coach() {
                     className="object-cover"
                   />
                 </div>
-                <span className="absolute left-0 top-0 h-8 w-8 border-l-2 border-t-2 border-lagoon/60" />
-                <span className="absolute right-0 top-0 h-8 w-8 border-r-2 border-t-2 border-lagoon/60" />
-                <span className="absolute bottom-0 left-0 h-8 w-8 border-b-2 border-l-2 border-lagoon/60" />
-                <span className="absolute bottom-0 right-0 h-8 w-8 border-b-2 border-r-2 border-lagoon/60" />
+                <span className="absolute -left-3 -top-3 h-8 w-8 border-l-2 border-t-2 border-lagoon/70" />
+                <span className="absolute -right-3 -top-3 h-8 w-8 border-r-2 border-t-2 border-lagoon/70" />
+                <span className="absolute -bottom-3 -left-3 h-8 w-8 border-b-2 border-l-2 border-lagoon/70" />
+                <span className="absolute -bottom-3 -right-3 h-8 w-8 border-b-2 border-r-2 border-lagoon/70" />
               </div>
             </div>
           </div>
 
-          <div className="lg:border-l-2 lg:border-lagoon/25 lg:pl-8">
+          <div className="lg:relative lg:pl-8">
+            <div className="absolute -left-1 top-0 hidden h-full w-px bg-gradient-to-b from-transparent via-lagoon/60 to-transparent lg:block" />
             <p className="max-w-lg text-base leading-relaxed text-ink-200">
               Coach sportif depuis plus de{" "}
               <span className="font-semibold text-ink-50">15 ans</span>, dont{" "}
