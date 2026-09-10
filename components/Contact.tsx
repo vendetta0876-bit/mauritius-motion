@@ -33,12 +33,13 @@ export function Contact() {
               ))}
             </ul>
 
-            <WhatsappCta
-              label="Contacter sur WhatsApp"
-              message="Bonjour, je souhaite réserver une séance de coaching sportif."
-              variant="solid"
-              className="mt-8"
-            />
+            <div className="mt-8 flex justify-center lg:justify-start">
+              <WhatsappCta
+                label="Contacter sur WhatsApp"
+                message="Bonjour, je souhaite réserver une séance de coaching sportif."
+                variant="solid"
+              />
+            </div>
           </div>
 
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-card border border-white/10">

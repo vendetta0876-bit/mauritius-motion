@@ -24,7 +24,7 @@ export function Hero() {
             le temps.
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 flex justify-center lg:justify-start">
             <a
               href="#formules"
               className="inline-flex items-center justify-center rounded-md bg-coral px-6 py-3 text-sm font-semibold text-[#2a0e05] transition-colors hover:bg-coral/90"

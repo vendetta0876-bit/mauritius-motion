@@ -93,7 +93,7 @@ function BannerStat({ value, label, delayMs }: { value: string; label: string; d
 export function StatsBanner() {
   return (
     <div className="border-y border-white/10 bg-base-alt">
-      <div className="mx-auto flex max-w-6xl flex-wrap divide-x divide-white/10 px-6 py-10 sm:px-10 lg:px-16">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-y-8 px-6 py-10 sm:flex sm:flex-nowrap sm:divide-x sm:divide-white/10 sm:px-10 lg:px-16">
         {stats.map((stat, i) => (
           <BannerStat key={stat.label} value={stat.value} label={stat.label} delayMs={i * 120} />
         ))}
