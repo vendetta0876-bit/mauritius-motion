@@ -23,10 +23,9 @@ const icons: Record<string, JSX.Element> = {
 
 function KettlebellOutline({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 120 140" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
-      <path d="M40 45V35a20 20 0 0 1 40 0v10" />
-      <rect x="35" y="45" width="50" height="18" rx="9" />
-      <circle cx="60" cy="99" r="38" />
+    <svg viewBox="0 0 100 130" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+      <rect x="28" y="8" width="44" height="34" rx="17" />
+      <circle cx="50" cy="90" r="38" />
     </svg>
   );
 }
@@ -40,9 +39,10 @@ const steps = [
 export function Method() {
   return (
     <section className="section-shell relative overflow-hidden bg-base">
-      <KettlebellOutline className="pointer-events-none absolute -left-10 top-10 h-56 w-56 rotate-[-12deg] text-coral/10" />
-      <KettlebellOutline className="pointer-events-none absolute right-0 top-1/3 h-40 w-40 rotate-[10deg] text-lagoon/10" />
-      <KettlebellOutline className="pointer-events-none absolute -right-6 bottom-0 h-64 w-64 rotate-[6deg] text-coral/[0.06]" />
+      <KettlebellOutline className="animate-ghost pointer-events-none absolute left-6 top-4 h-16 w-16 rotate-[-8deg] text-coral/25 sm:left-10" />
+      <KettlebellOutline className="animate-ghost ghost-delay-2 pointer-events-none absolute right-8 top-6 h-12 w-12 rotate-[10deg] text-lagoon/25" />
+      <KettlebellOutline className="animate-ghost ghost-delay-1 pointer-events-none absolute left-1/4 bottom-4 h-14 w-14 rotate-[6deg] text-lagoon/20" />
+      <KettlebellOutline className="animate-ghost ghost-delay-3 pointer-events-none absolute right-1/4 bottom-6 h-10 w-10 rotate-[-6deg] text-coral/20" />
 
       <div className="relative mx-auto max-w-6xl">
         <h2 className="text-sm font-semibold tracking-wide text-lagoon">Ma méthode</h2>
