@@ -14,6 +14,10 @@ export function Hero() {
             Coaching sportif à <span className="text-lagoon">l&rsquo;île Maurice</span>
           </h1>
 
+          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-ink-400">
+            Coaching sportif · Kettlebell · Dépolarisation®
+          </p>
+
           <p className="mt-6 max-w-md text-base leading-relaxed text-ink-200">
             Votre ambition mérite plus qu&rsquo;un programme générique. Je
             construis un coaching précis, adapté à votre niveau, vos

@@ -48,18 +48,23 @@ export function Coach() {
 
             <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-200">
               Au fil des centaines de sportifs accompagnés, j&rsquo;ai appris
-              qu&rsquo;un entraînement efficace n&rsquo;est jamais un
-              entraînement qui casse le corps. La vraie performance se
-              construit sur la durée&nbsp;: une progression maîtrisée, une
-              technique juste, et une prévention des blessures pensée à
-              chaque séance, pas seulement quand la douleur arrive.
+              qu&rsquo;un entraînement efficace ne repose pas uniquement sur
+              le physique. La progression se construit à travers le
+              mouvement, la technique, la confiance et la capacité à
+              dépasser ce qui nous limite.
             </p>
 
             <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-200">
-              Aujourd&rsquo;hui, je construis avec chaque sportif un
-              programme sur-mesure qui respecte le corps autant que
-              l&rsquo;objectif, pour progresser sans se blesser, et durer
-              dans le temps.
+              Aujourd&rsquo;hui, j&rsquo;associe mon expérience du coaching
+              sportif à la Dépolarisation®, une approche de coaching centrée
+              sur les blocages et conditionnements qui peuvent influencer nos
+              comportements, nos décisions et notre performance.
+            </p>
+
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-200">
+              Mon objectif reste le même&nbsp;: construire avec chaque
+              sportif un accompagnement sur-mesure pour progresser,
+              performer et durer.
             </p>
 
             <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-coral/30 bg-coral/10 py-2.5 pl-2.5 pr-5">
