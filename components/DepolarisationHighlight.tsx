@@ -2,9 +2,15 @@ import { WhatsappCta } from "./WhatsappCta";
 
 export function DepolarisationHighlight() {
   return (
-    <section className="section-shell bg-base">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-sm font-semibold tracking-wide text-lagoon">Au-delà du physique</h2>
+    <section className="section-shell relative overflow-hidden bg-base">
+      <div aria-hidden className="pointer-events-none absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-lagoon/15 blur-[100px]" />
+      <div aria-hidden className="pointer-events-none absolute -right-20 bottom-10 h-64 w-64 rounded-full bg-coral/15 blur-[90px]" />
+
+      <div className="relative mx-auto max-w-2xl text-center">
+        <span className="eyebrow mx-auto text-lagoon">
+          <span className="h-1.5 w-1.5 rounded-full bg-lagoon" />
+          Au-delà du physique
+        </span>
 
         <p className="mt-6 text-lg text-ink-50">
           La performance ne dépend pas uniquement de vos capacités physiques.
@@ -23,7 +29,7 @@ export function DepolarisationHighlight() {
           <span className="text-lagoon">Le mental vous permet de les exprimer.</span>
         </p>
 
-        <div className="glass-card mx-auto mt-10 flex max-w-sm flex-col items-center gap-4 rounded-card border-t-2 border-lagoon/40 p-6">
+        <div className="glass-card-highlight mx-auto mt-10 flex max-w-sm flex-col items-center gap-4 rounded-card p-6">
           <div>
             <p className="text-sm text-ink-400">Séance de Dépolarisation®</p>
             <p className="mt-1 text-2xl font-display">
@@ -33,7 +39,7 @@ export function DepolarisationHighlight() {
           <WhatsappCta
             label="Réserver une séance"
             message="Bonjour, je suis intéressé(e) par une séance de Dépolarisation®."
-            variant="outline"
+            variant="solid"
             className="w-full"
           />
         </div>
